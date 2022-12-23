@@ -28,7 +28,7 @@
 
 .model table{
     margin: 5%;
-    width: 70%;
+    width: 75%;
     font-size: 120%;
     height: 110%;
 }
@@ -54,13 +54,14 @@
 /***彈窗***/
 
 dialog{
-    border: none; height: 45%;
+    border: none; height: 55%;
     box-shadow: 0 2px 6px #ccc;
     border-radius: 10px;
     padding: 10%;
+    text-align: center;
 }
 dialog::backdrop {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 dialog img{
@@ -73,3 +74,6 @@ dialog img{
     margin: 10% 35% 0 35%;
 }
 
+dialog h3{
+    margin-bottom: 15%;
+}

@@ -23,7 +23,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#" id="navbar_brandTitle">AI智慧喜</a>
+        <a class="navbar-brand" href="../index.html" id="navbar_brandTitle">AI智慧喜</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" id="btn_msg">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16" id="msg">
             <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
@@ -107,11 +107,36 @@
         問題回報
       </div>
     </section>
-    <div id="area" class="container">
-      <!--內容-->
-          
+    <div class="bg_water">
+      <img src="../asset/img/water1.png" alt="" id="bg_water1">
+      <img src="../asset/img/water2.png" alt="" id="bg_water2">
+    </div>
+
+    <form action="">
+      <div id="area" class="container">
+        <!--內容-->
+          <div class="model">
+            <div class="mb-3">
+              <h2>標題：</h2>
+              <input type="text" class="form-control" placeholder="請輸入內容....">
+            </div>
+            <div class="mb-3">
+              <h2>內容描述：</h2>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="13" placeholder="請輸入內容...."></textarea>
+            </div>
+
+            
+          </div>
+
   
       </div>
+      <!--按鈕-->
+      <section id="btn_purchase_area" class="container">
+        <input type="button" class="btn btn-lg btn-secondary" id="purchase_back" value="重填">
+        <input type="submit" class="btn btn-lg btn-light" id="purchase_confirm" onclick="location.href=''" value="送出">
+
+      </section>  
+    </form>
       
       
   
