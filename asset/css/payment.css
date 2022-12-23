@@ -1,0 +1,81 @@
+.card_area{
+    margin-top: 20%;
+    margin-bottom: 18%;
+    background-color: rgba(255, 255, 255, 0.63);
+    width: 80%; height: 100%;
+    border-radius: 10px;
+    padding: 5%;
+    
+}
+.card_area h1{
+    text-align: center;
+    font-size: 140%;
+}
+
+.card_radio input{
+    width: 110px;
+}
+
+.card_area table td{
+    width: 60%;
+    padding: 5% 0 5% 0;
+}
+
+.card_area table td p{
+    margin: auto;
+    font-size: 110%;
+}
+
+.card_area form{
+    margin-top: 10%;
+}
+/**新增***/
+.add_card_area{
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.add_card_area svg{
+    width: 15%;
+}
+.add_card_area p{
+    font-size: 120%;
+    margin: auto;
+}
+
+#add_card{
+    background-color:transparent;
+    border-style: none;
+}
+
+dialog{
+    border: none; height: 35%;
+    box-shadow: 0 2px 6px #ccc;
+    border-radius: 10px;
+}
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.myInput{
+    width: 50px;
+}
+
+#submit{
+    margin-left: 50%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+#add p{
+    text-align: center;
+}
+.btn_dialog{
+    margin-top: 20px;
+}
+
+#add form table td{
+    height: 40px;
+}

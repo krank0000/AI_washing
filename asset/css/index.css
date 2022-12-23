@@ -1,0 +1,60 @@
+html,body,main{
+    height: 100%;
+    overflow: hidden;
+}
+
+#btn_index_area {
+    height: 100%;
+    margin: auto;
+    margin-top: 10%;
+}
+.btn_index{
+    overflow: hidden;
+    margin: auto;
+    width: 85%;
+    border-radius: 30px;
+}
+
+#btn_index_area button{
+    margin: auto;
+    width: 100%;
+    padding: 5%;
+    font-size: 130%;
+    border-radius: 30px;
+}
+
+
+#btn_index_area img{
+    width: 10%;
+}
+
+#btn_index_area button:active{
+    transform: scale(1.2,1.2);
+    transition-delay: 3s;
+}
+
+/**動畫**/
+
+#index_img{
+    position: absolute;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    padding-top: 16%;
+}
+
+#index_img1{
+    position: absolute;
+    left: 85px;
+    width: 200px;
+    overflow: hidden;
+    animation: shaking 0.5s infinite alternate;
+}
+
+
+#index_img2{
+    position: absolute;
+    left: 135px;top: 125px;
+    width: 100px;
+    animation: rotate 1.5s infinite alternate ease;
+}
+

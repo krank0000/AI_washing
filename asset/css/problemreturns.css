@@ -1,0 +1,9 @@
+#area{
+    position: fixed;
+    top: 17%;left: 0;
+    width: 100%;height: 66%;
+    overflow: auto;
+    margin: auto;
+}
+
+
