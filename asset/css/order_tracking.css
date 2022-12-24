@@ -27,10 +27,12 @@
 }
 
 .model table{
-    margin: 5%;
+    margin: 0 0 15% 5%;
     width: 75%;
     font-size: 120%;
     height: 110%;
+    position: relative;
+    top: -20%;
 }
 
 .order_detail_td{
@@ -41,8 +43,8 @@
     background-color: transparent;
     border: none;
     width: 20%;
-    position: absolute;
-    right: 10%;top: 25%;
+    position: relative;
+    left: 80%;
 }
 
 #order_detail button img{
