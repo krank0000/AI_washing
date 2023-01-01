@@ -85,14 +85,18 @@
 
 #btn_login_area{
     position: relative;
-    text-align: center;
-    margin-top: 14%;
+    width: 80%; top: 5%;
+    margin: 0 10% 0 10%;
 }
 
-#btn_login_area a{
+
+#btn_login{
+    float: right;
+}
+
+#go_register {
+    top: 10%;
     color: white;
-}
-
-#btn_login_area input{
-    margin-bottom: 15%;
+    text-align: center;
+    position: relative;
 }
