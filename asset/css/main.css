@@ -36,6 +36,16 @@ body{
     margin: 2%;
     font-size: 120%;
 }
+hr{
+    margin: 5% 10% 5% 10%;
+    border-top: 1px solid slategray;
+}
+.nav-item button{
+    color: rgb(89, 102, 114);
+    font-size: 120%;
+    background-color: transparent;
+    border: none;
+}
 
 
 /***訊息區*****/

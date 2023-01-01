@@ -99,11 +99,37 @@
             <li class="nav-item">
               <a class="nav-link" href="page/privacypolicy.html">服務條款</a>
             </li>
+            <!--登出-->
+            <hr>
+            <li class="nav-item ">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                登出
+              </button>
+            </li>
+            <!--登出結束-->
           </ul>
         </div>
 
       </div>
     </nav>
+    <!-- 登出Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">帳號登出</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            是否確定登出？
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">確認</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--內容-->
     <div class="container">
       <div class="d-grid gap-5" id="btn_index_area">
@@ -134,7 +160,7 @@
         </div>
     </div>
     
-    <div class="container" id="index_img">
+    <div  id="index_img">
       <img src="asset/img/washing-machine_index1.png" id="index_img2">
       <img src="asset/img/washing-machine_index.png" id="index_img1">
     </div>

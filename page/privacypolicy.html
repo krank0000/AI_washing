@@ -95,10 +95,36 @@
             <li class="nav-item">
               <a class="nav-link active" href="privacypolicy.html">服務條款</a>
             </li>
+            <!--登出-->
+            <hr>
+            <li class="nav-item ">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                登出
+              </button>
+            </li>
+            <!--登出結束-->
           </ul>
         </div>
       </div>
     </nav>
+    <!-- 登出Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">帳號登出</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            是否確定登出？
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">確認</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <section id="page_title_area" >
       <svg xmlns="http://www.w3.org/2000/svg" onclick="history.back()"  class="bi bi-caret-left" fill="currentColor" viewBox="0 0 16 16">
           <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
