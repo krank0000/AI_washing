@@ -1,7 +1,7 @@
 #area{
     position: fixed;
-    top: 19%;left: 0;
-    width: 100%;height: 78%;
+    top: 17%;left: 0;
+    width: 100%;height: 79%;
     overflow: auto;
     margin: auto;
 }
@@ -26,10 +26,14 @@
 
 /***註冊****/
 
+#register_area{
+    position: relative;
+}
+
 #form_check{
     letter-spacing: 4px;
     font-size: 87%;
-    margin-top: 13%;
+    margin-top: 10%;
 }
 
 .form-control{
@@ -40,49 +44,54 @@
     margin-bottom: 5%;
 }
 
-#register_area{
-    padding-bottom: 18%;
+#formFileSm{
+    margin-top: 5%;
+    font-size: 90%;
 }
+
 
     /***按鈕***/
 
 #btn_register_area{
-    position: fixed;
-    width: 70%; top: 90%;
-    margin: 0 15% 0 15%;
+    position: relative;
+    width: 70%;
 }
 
 #register_confirm{
     float: right;
+    animation: border 1s infinite;
+    padding-bottom: 5%;
 }
 /***登入***/
 
-#line_area button{
-    background-color: transparent;
-    border: none;
-    width: 25%;
-}
 
 #line{
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-}
-
-#btn_line:active{
-    transform: scale(1.2);
+    width: 50%;
+    margin: 15%;
+    animation: size_line 1s infinite alternate;
+    z-index: 9;
 }
 
 #line_area{
-    display: flex;
-    padding: 6%;
-    background-color: rgba(255, 255, 255, 0.52);
+    text-align: center;
+    padding: 15% 10% 10% 10%;
+    background-color: rgba(255, 255, 255, 0.753);
+    margin-top: 20%;
+    
 }
 
-#line_area h4{
-    padding-left: 8%;
+#hand{
+    position: fixed;
+    opacity: 0.7;
+    width: 180px;
+    top: 500px;left: 300px;
+    animation: hand 1.8s infinite alternate;
 }
 
+
+
+
+/***
 #btn_login_area{
     position: relative;
     width: 80%; top: 5%;
@@ -100,3 +109,4 @@
     text-align: center;
     position: relative;
 }
+****/

@@ -143,32 +143,48 @@
         <!--內容-->
           <div class="model" id="register_area">
             <div class="mb-3">
-              <h2>帳號：</h2>
-              <input type="text" class="form-control" placeholder="請輸入手機號碼">
+              <h3>姓名：</h3>
+              <input type="text" class="form-control" placeholder="請輸入姓名">
             </div>
             <div class="mb-3">
-              <h2>密碼：</h2>
-              <input type="password" class="form-control" placeholder="請輸入密碼">
+              <h3>暱稱：</h3>
+              <input type="text" class="form-control" placeholder="請輸入暱稱">
             </div>
             <div class="mb-3">
-              <h2>確認密碼：</h2>
-              <input type="password" class="form-control" placeholder="請再次輸入密碼">
+              <h3>電話：</h3>
+              <input type="text" class="form-control" placeholder="請輸入電話">
             </div>
+            <div class="mb-3">
+              <h3>地址：</h3>
+              <input type="text" class="form-control" placeholder="請輸入地址">
+            </div>
+            <div class="mb-3">
+              <h3>Email：</h3>
+              <input type="email" class="form-control" placeholder="請輸入Email">
+            </div>
+            
+            <div class="mb-3">
+              <h3>選擇頭貼：</h3>
+              <input class="form-control form-control-sm" id="formFileSm" type="file">
+            </div>
+
             <div class="form-check" id="form_check">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
               <label class="form-check-label" for="flexCheckChecked">
                 我已閱讀相關合約條款
               </label>
             </div>
+
+            
           </div>
 
-  
+          <!--按鈕-->
+          <section id="btn_register_area" class="container">
+            <input type="button" class="btn btn-lg btn-secondary" onclick="history.back()" value="返回">
+            <input type="button" class="btn btn-lg btn-light" id="register_confirm" onclick="location.href='register_success.html'" value="註冊">
+          </section>  
       </div>
-      <!--按鈕-->
-      <section id="btn_register_area" class="container">
-        <input type="button" class="btn btn-lg btn-secondary" onclick="history.back()" value="返回">
-        <input type="button" class="btn btn-lg btn-light" id="register_confirm" onclick="location.href='register_success.html'" value="註冊">
-      </section>  
+      
     </form>
       
       

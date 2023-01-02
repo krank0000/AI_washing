@@ -36,5 +36,6 @@
 
 #purchase_confirm{
     float: right;
+    animation: border 1s infinite;
 }
 

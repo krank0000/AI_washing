@@ -37,6 +37,7 @@
 #btn_purchase_area input{
     width: 30%;
     margin: 0 35% 0 35%;
+    animation: border 1s infinite;
 }
 
 
