@@ -141,63 +141,201 @@
 
     <div id="area" class="container">
       <!--內容-->
-      <div class="model" id="time_area">
-        <h2>預計完成時間 週三</h2>
-        <h2>2022/12/14 15:00</h2>
-      </div>    
-  
-      <div class="model" id="order_detail">
-        <button id="QR">
-          <img src="../asset/img/qr-code.png" alt="">
-        </button>
-        <table>
-          <tr>
-            <td class="order_detail_td">訂單邊號：</td>
-            <td class="order_detail_td">A000020</td>
-          </tr>
-          <tr>
-            <td class="order_detail_td">加購商品：</td>
-            <td class="order_detail_td">中筒襪</td>
-            <td class="order_detail_td">x 1</td>
-          </tr>
-          <tr>
-            <td class="order_detail_td">訂單處理：</td>
-            <td class="order_detail_td">已完成</td>
-          </tr>
-          <tr>
-            <td class="order_detail_td">鎖櫃編號：</td>
-            <td class="order_detail_td">L000018</td>
-          </tr>
-          <tr>
-            <td class="order_detail_td">領取狀態：</td>
-            <td class="order_detail_td">可領取</td>
-          </tr>
-        </table>
-      </div>  
-  
+      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+        <div class="carousel-indicators" id="carousel_button_bottom">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!--訂單1-->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="model" id="time_area">
+              <h2>預計完成時間 週三</h2>
+              <h2>2022/12/14 15:00</h2>
+            </div>    
+        
+            <div class="model" id="order_detail">
+              <button id="QR1">
+                <img src="../asset/img/qr-code.png" alt="">
+              </button>
+              <table>
+                <tr>
+                  <td class="order_detail_td">訂單邊號：</td>
+                  <td class="order_detail_td">A000020</td>
+                </tr>
+                <tr>
+                  <td class="order_detail_td">加購商品：</td>
+                  <td class="order_detail_td">中筒襪</td>
+                  <td class="order_detail_td">x 1</td>
+                </tr>
+                <tr>
+                  <td class="order_detail_td">訂單處理：</td>
+                  <td class="order_detail_td">已完成</td>
+                </tr>
+                <tr>
+                  <td class="order_detail_td">鎖櫃編號：</td>
+                  <td class="order_detail_td">L000018</td>
+                </tr>
+                <tr>
+                  <td class="order_detail_td">領取狀態：</td>
+                  <td class="order_detail_td">可領取</td>
+                </tr>
+              </table>
+            </div>  
+            <dialog id="QR_show1">
+              <h3>請至機台掃描QR Code</h3>
+              <img src="../asset/img/qr-code_A.png" alt="">
+              <br>
+              <input type="button" value="OK" id="close1" class="btn_dialog btn btn-lg btn-secondary">
+            </dialog>
+          </div>
+
+          <!--訂單2-->
+          <div class="carousel-item">
+            <div class="model" id="time_area">
+              <h2>預計完成時間 週四</h2>
+              <h2>2022/12/15 15:00</h2>
+            </div>    
+        
+            <div class="model" id="order_detail">
+              <button id="QR2">
+                <img src="../asset/img/qr-code.png" alt="">
+              </button>
+              <table>
+                <tr>
+                  <td class="order_detail_td">訂單邊號：</td>
+                  <td class="order_detail_td">A000020</td>
+                </tr>
+                <tr>
+                  <td class="order_detail_td">加購商品：</td>
+                  <td class="order_detail_td">中筒襪</td>
+                  <td class="order_detail_td">x 1</td>
+                </tr>
+                <tr>
+                  <td class="order_detail_td">訂單處理：</td>
+                  <td class="order_detail_td">已完成</td>
+                </tr>
+                <tr>
+                  <td class="order_detail_td">鎖櫃編號：</td>
+                  <td class="order_detail_td">L000018</td>
+                </tr>
+                <tr>
+                  <td class="order_detail_td">領取狀態：</td>
+                  <td class="order_detail_td">可領取</td>
+                </tr>
+              </table>
+            </div>  
+            <dialog id="QR_show2">
+              <h3>請至機台掃描QR Code</h3>
+              <img src="../asset/img/qr-code_A.png" alt="">
+              <br>
+              <input type="button" value="OK" id="close2" class="btn_dialog btn btn-lg btn-secondary">
+            </dialog>
+          </div>
+
+          <!--訂單3-->
+          <div class="carousel-item">
+            <div class="model" id="time_area">
+              <h2>預計完成時間 週五</h2>
+              <h2>2022/12/16 15:00</h2>
+            </div>    
+        
+            <div class="model" id="order_detail">
+              <button id="QR3">
+                <img src="../asset/img/qr-code.png" alt="">
+              </button>
+              <table>
+                <tr>
+                  <td class="order_detail_td">訂單邊號：</td>
+                  <td class="order_detail_td">A000020</td>
+                </tr>
+                <tr>
+                  <td class="order_detail_td">加購商品：</td>
+                  <td class="order_detail_td">中筒襪</td>
+                  <td class="order_detail_td">x 1</td>
+                </tr>
+                <tr>
+                  <td class="order_detail_td">訂單處理：</td>
+                  <td class="order_detail_td">已完成</td>
+                </tr>
+                <tr>
+                  <td class="order_detail_td">鎖櫃編號：</td>
+                  <td class="order_detail_td">L000018</td>
+                </tr>
+                <tr>
+                  <td class="order_detail_td">領取狀態：</td>
+                  <td class="order_detail_td">可領取</td>
+                </tr>
+              </table>
+            </div>  
+            <dialog id="QR_show3">
+              <h3>請至機台掃描QR Code</h3>
+              <img src="../asset/img/qr-code_A.png" alt="">
+              <br>
+              <input type="button" value="OK" id="close3" class="btn_dialog btn btn-lg btn-secondary">
+            </dialog>
+        </div>
+
+        <div id="carousel_button_RL">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
+      </div >
+
     </div>
-
-    <dialog id="QR_show">
-      <h3>請至機台掃描QR Code</h3>
-      <img src="../asset/img/qr-code_A.png" alt="">
-      <br>
-      <input type="button" value="OK" id="close" class="btn_dialog btn btn-lg btn-secondary">
-    </dialog>
-
 
   </main>
   <script>
     /**彈窗**/
-    let btn=document.querySelector("#QR");
-    let QR_show=document.querySelector("#QR_show");
+    let btn=document.querySelector("#QR1");
+    let QR_show=document.querySelector("#QR_show1");
     btn.addEventListener("click", function(){
       QR_show.showModal();
     })
 
     /**關閉**/
-    let close=document.querySelector("#close");
+    let close=document.querySelector("#close1");
     close.addEventListener("click", function(){
       QR_show.close();
+    })
+  </script>
+
+  <script>
+    /**彈窗**/
+    let btn2=document.querySelector("#QR2");
+    let QR_show2=document.querySelector("#QR_show2");
+    btn2.addEventListener("click", function(){
+      QR_show2.showModal();
+    })
+
+    /**關閉**/
+    let close2=document.querySelector("#close2");
+    close2.addEventListener("click", function(){
+      QR_show2.close();
+    })
+  </script>
+
+  <script>
+    /**彈窗**/
+    let btn3=document.querySelector("#QR3");
+    let QR_show3=document.querySelector("#QR_show3");
+    btn3.addEventListener("click", function(){
+      QR_show3.showModal();
+    })
+
+    /**關閉**/
+    let close3=document.querySelector("#close3");
+    close3.addEventListener("click", function(){
+      QR_show3.close();
     })
   </script>
 
