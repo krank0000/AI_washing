@@ -80,6 +80,8 @@ dialog h3{
 
 #btn_purchase_area{
     margin-top: 5%;
+    display: flex;
+    width: 85%;
 }
 
 #purchase_confirm{
