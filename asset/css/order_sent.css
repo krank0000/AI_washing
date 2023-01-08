@@ -40,5 +40,40 @@
     animation: border 1s infinite;
 }
 
+/***確認訂單完成***/
+#order{
+    height: 60%;
+    padding-top: 20%;
+}
+
+#order h1{
+    margin-top: 15%;
+}
+
+#btn_order_area{
+    position: fixed;
+    width: 70%; top: 85%;
+    margin: 0 15% 0 15%;
+    text-align: center;
+}
+
+#order_confirm{
+    margin-left: 30%;
+}
+
+.spinner-grow{
+    width: 60px;
+    height: 60px;
+}
+
+/***確認完成***/
+#order_complet{
+    height: 60%;
+    padding-top: 10%;
+}
+
+#order_complet h1{
+    margin-top: 5%;
+}
 
 
