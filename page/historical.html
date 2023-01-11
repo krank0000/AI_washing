@@ -143,65 +143,35 @@
     <div id="record_area" class="container">
         <div class="record">
             <div class="record_date">
-                <p>11/15</p>
+              <p>2023年 <br> 1月11日 <br> 19:05</p>
             </div>
             <div class="record_txt">
                 <p>訂單編號：A000015</p>
                 <p>洗滌模式：標準</p>
                 <p>乾燥模式：日曬</p>
                 <p>摺衣模式：不折</p>
-                <p>加購商品：無</p>
+                <div class="add_btn">
+                  <p>加購商品：</p>
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="top" title="加購商品詳情" 
+                        data-bs-content="中筒襪 x1 M/白">點我看詳情</button>
+                </div>
                 <p>碳點數：35</p>
+                <p>碳稅：12</p>
                 <p>總金額：50</p>
             </div>
         </div>
 
-        <div class="record">
-            <div class="record_date">
-                <p>11/15</p>
-            </div>
-            <div class="record_txt">
-                <p>訂單編號：A000015</p>
-                <p>洗滌模式：標準</p>
-                <p>乾燥模式：日曬</p>
-                <p>摺衣模式：不折</p>
-                <p>加購商品：無</p>
-                <p>碳點數：35</p>
-                <p>總金額：50</p>
-            </div>
-        </div>
-        <div class="record">
-            <div class="record_date">
-                <p>11/15</p>
-            </div>
-            <div class="record_txt">
-                <p>訂單編號：A000015</p>
-                <p>洗滌模式：標準</p>
-                <p>乾燥模式：日曬</p>
-                <p>摺衣模式：不折</p>
-                <p>加購商品：無</p>
-                <p>碳點數：35</p>
-                <p>總金額：50</p>
-            </div>
-        </div>
-        <div class="record">
-            <div class="record_date">
-                <p>11/15</p>
-            </div>
-            <div class="record_txt">
-                <p>訂單編號：A000015</p>
-                <p>洗滌模式：標準</p>
-                <p>乾燥模式：日曬</p>
-                <p>摺衣模式：不折</p>
-                <p>加購商品：無</p>
-                <p>碳點數：35</p>
-                <p>總金額：50</p>
-            </div>
-        </div>
     </div>
 
 
   </main>
 
+  <!--加購商品詳情-->
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
 </body>
 </html>

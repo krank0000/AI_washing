@@ -136,7 +136,7 @@
     <!--內容-->
     <div id="purchase_area" class="container">
         <!--商品-->
-        <div class="purchase">
+          <div class="purchase">
             <div class="purchase_img">
                 <img src="../asset/img/sock1.png" alt="">
               </div>
@@ -169,21 +169,22 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type='button' value='-' class='qtyminus' field='quantity'>
+                              <span class='minus' id="minus">-</span>
                             </td>
                             <td colspan="2" align="center">
-                                <input type='text' name='quantity' value='0' class='qty'>
+                              <span class='num' id="num">0</span>
                             </td>
                             <td>
-                                <input type='button' value='+' class='qtyplus' field='quantity'>
+                                <span class='plus' id="plus">+</span>
                             </td>
                         </tr>
                       </table>
                 </form>
-            </div>
-        </div>
+              </div>
+          </div>
 
-        <div class="purchase">
+          <!--商品2-->
+          <div class="purchase">
             <div class="purchase_img">
                 <img src="../asset/img/sock1.png" alt="">
               </div>
@@ -216,21 +217,22 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type='button' value='-' class='qtyminus' field='quantity'>
+                              <span class='minus' id="minus2">-</span>
                             </td>
                             <td colspan="2" align="center">
-                                <input type='text' name='quantity' value='0' class='qty'>
+                              <span class='num' id="num2">0</span>
                             </td>
                             <td>
-                                <input type='button' value='+' class='qtyplus' field='quantity'>
+                                <span class='plus' id="plus2">+</span>
                             </td>
                         </tr>
                       </table>
                 </form>
-            </div>
-        </div>
+              </div>
+          </div>
 
-        <div class="purchase">
+          <!--商品3-->
+          <div class="purchase">
             <div class="purchase_img">
                 <img src="../asset/img/sock1.png" alt="">
               </div>
@@ -263,20 +265,19 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type='button' value='-' class='qtyminus' field='quantity'>
+                              <span class='minus' id="minus3">-</span>
                             </td>
                             <td colspan="2" align="center">
-                                <input type='text' name='quantity' value='0' class='qty'>
+                              <span class='num' id="num3">0</span>
                             </td>
                             <td>
-                                <input type='button' value='+' class='qtyplus' field='quantity'>
+                                <span class='plus' id="plus3">+</span>
                             </td>
                         </tr>
                       </table>
                 </form>
-            </div>
-        </div>
-            
+              </div>
+          </div>
 
     </div>
     <!--總金額-->
@@ -292,5 +293,65 @@
   </div>
   </main>
   <!--數量-->
+  <script>
+    const plus = document.querySelector("#plus"),
+          minus = document.querySelector("#minus"),
+          num = document.querySelector("#num");
+
+    let a = 0;
+
+    plus.addEventListener("click",()=>{
+      a++;
+      num.innerText = a;
+      console.log(a);
+    });
+
+    minus.addEventListener("click",()=>{
+      if(a > 0){
+        a--;
+        num.innerText = a;
+      }
+    });
+  </script>
+  <script>
+    const plus2 = document.querySelector("#plus2"),
+          minus2 = document.querySelector("#minus2"),
+          num2 = document.querySelector("#num2");
+
+    let b = 0;
+
+    plus2.addEventListener("click",()=>{
+      b++;
+      num2.innerText = b;
+      console.log(b);
+    });
+
+    minus2.addEventListener("click",()=>{
+      if(b > 0){
+        b--;
+        num2.innerText = b;
+      }
+    });
+  </script>
+  <script>
+    const plus3 = document.querySelector("#plus3"),
+          minus3 = document.querySelector("#minus3"),
+          num3 = document.querySelector("#num3");
+
+    let c = 0;
+
+    plus3.addEventListener("click",()=>{
+      c++;
+      num3.innerText = c;
+      console.log(c);
+    });
+
+    minus3.addEventListener("click",()=>{
+      if(c > 0){
+        c--;
+        num3.innerText = c;
+      }
+    });
+  </script>
 </body>
 </html>
