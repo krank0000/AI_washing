@@ -166,13 +166,10 @@
                 </tr>
                 <tr>
                     <td align="center" valign="center">加購商品：</td>
-                    <td align="center" valign="center">中筒襪</td>
-                    <td align="center" valign="center">x 1</td>
-                </tr>
-                <tr>
-                    <td align="center" valign="center">商品詳情：</td>
-                    <td align="center" valign="center">M</td>
-                    <td align="center" valign="center">白</td>
+                    <td align="center" valign="center" colspan="2">
+                      <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="top" title="加購商品詳情" 
+                        data-bs-content="中筒襪 x1 M/白">點我看詳情</button>
+                    </td>
                 </tr>
                 <tr>
                     <td align="center" valign="center">碳點數：</td>
@@ -215,6 +212,13 @@
         <input type="button" class="btn btn-lg btn-light" id="purchase_confirm" onclick="location.href='../page/payment_completed.html'" value="完成">
       </section>  
     </form>
+    <!--加購商品詳情-->
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+    </script>
   </main>
 </body>
 </html>
