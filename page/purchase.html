@@ -169,13 +169,16 @@
                         </tr>
                         <tr>
                             <td>
-                              <span class='minus' id="minus">-</span>
+                              <input type="button" class='minus' id="minus" value="-"></button>
+                              <!--<span class='minus' id="minus">-</span>-->
                             </td>
                             <td colspan="2" align="center">
-                              <span class='num' id="num">0</span>
+                              <input type="number" span class='num' id="num" value="0">
+                              <!--<span class='num' id="num">0</span>-->
                             </td>
                             <td>
-                                <span class='plus' id="plus">+</span>
+                                <input type="button" class='plus' id="plus" value="+"></button>
+                                <!--<span class='plus' id="plus">+</span>-->
                             </td>
                         </tr>
                       </table>
@@ -183,101 +186,6 @@
               </div>
           </div>
 
-          <!--商品2-->
-          <div class="purchase">
-            <div class="purchase_img">
-                <img src="../asset/img/sock1.png" alt="">
-              </div>
-            <div class="purchase_txt">
-                <form id='' method='POST' action='#'>
-                    <table>
-                        <tr>
-                          <td colspan="4" align="center" valign="center" class="purchase_name">中筒襪</td>
-                        </tr>
-                        <tr>
-                          <td>尺寸</td>
-                          <td>
-                              <select name="" id="">
-                                  <option value="">M</option>
-                                  <option value="">L</option>
-                              </select>
-                          </td>
-                          <td>顏色</td>
-                          <td>
-                            <select name="" id="">
-                                <option value="">白</option>
-                                <option value="">黑</option>
-                                <option value="">灰</option>
-                            </select>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td colspan="2">金額 $</td>
-                          <td colspan="2">50</td>
-                        </tr>
-                        <tr>
-                            <td>
-                              <span class='minus' id="minus2">-</span>
-                            </td>
-                            <td colspan="2" align="center">
-                              <span class='num' id="num2">0</span>
-                            </td>
-                            <td>
-                                <span class='plus' id="plus2">+</span>
-                            </td>
-                        </tr>
-                      </table>
-                </form>
-              </div>
-          </div>
-
-          <!--商品3-->
-          <div class="purchase">
-            <div class="purchase_img">
-                <img src="../asset/img/sock1.png" alt="">
-              </div>
-            <div class="purchase_txt">
-                <form id='' method='POST' action='#'>
-                    <table>
-                        <tr>
-                          <td colspan="4" align="center" valign="center" class="purchase_name">中筒襪</td>
-                        </tr>
-                        <tr>
-                          <td>尺寸</td>
-                          <td>
-                              <select name="" id="">
-                                  <option value="">M</option>
-                                  <option value="">L</option>
-                              </select>
-                          </td>
-                          <td>顏色</td>
-                          <td>
-                            <select name="" id="">
-                                <option value="">白</option>
-                                <option value="">黑</option>
-                                <option value="">灰</option>
-                            </select>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td colspan="2">金額 $</td>
-                          <td colspan="2">50</td>
-                        </tr>
-                        <tr>
-                            <td>
-                              <span class='minus' id="minus3">-</span>
-                            </td>
-                            <td colspan="2" align="center">
-                              <span class='num' id="num3">0</span>
-                            </td>
-                            <td>
-                                <span class='plus' id="plus3">+</span>
-                            </td>
-                        </tr>
-                      </table>
-                </form>
-              </div>
-          </div>
 
     </div>
     <!--總金額-->
@@ -292,7 +200,7 @@
     </section>
   </div>
   </main>
-  <!--數量-->
+  <!--數量 span
   <script>
     const plus = document.querySelector("#plus"),
           minus = document.querySelector("#minus"),
@@ -313,45 +221,23 @@
       }
     });
   </script>
+  -->
   <script>
-    const plus2 = document.querySelector("#plus2"),
-          minus2 = document.querySelector("#minus2"),
-          num2 = document.querySelector("#num2");
+    var minus = document.getElementById("minus");
+    var plus = document.getElementById("plus");
+    var num = document.getElementById("num");
 
-    let b = 0;
-
-    plus2.addEventListener("click",()=>{
-      b++;
-      num2.innerText = b;
-      console.log(b);
-    });
-
-    minus2.addEventListener("click",()=>{
-      if(b > 0){
-        b--;
-        num2.innerText = b;
+    plus.onclick=function(){
+      num.value = parseInt(num.value) + 1;
+    }
+    minus.onclick=function(){
+      if(num.value <= 0){
+        num.value = 0;
       }
-    });
-  </script>
-  <script>
-    const plus3 = document.querySelector("#plus3"),
-          minus3 = document.querySelector("#minus3"),
-          num3 = document.querySelector("#num3");
-
-    let c = 0;
-
-    plus3.addEventListener("click",()=>{
-      c++;
-      num3.innerText = c;
-      console.log(c);
-    });
-
-    minus3.addEventListener("click",()=>{
-      if(c > 0){
-        c--;
-        num3.innerText = c;
+      else{
+        num.value = parseInt(num.value) - 1 ;
       }
-    });
+    }
   </script>
 </body>
 </html>
