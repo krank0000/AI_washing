@@ -174,10 +174,18 @@ hr {
     position: relative;
     top: 100px;
   }
+  #price_area {
+    max-width: 430px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
   /* 分頁按鈕 */
   #btn_purchase_area {
     max-width: 430px;
     margin: auto;
+    width: 100%;
   }
   #btn_order_area {
     max-width: 430px;
