@@ -147,6 +147,7 @@ hr {
   }
   /* 分頁跑版 */
   #page_title_area {
+    position: static;
     top: 10%;
     max-width: 430px;
     margin: auto;
@@ -163,7 +164,8 @@ hr {
     top: 100px;
   }
   #carousel_button_RL {
-    width: 100vw;
+    position: static;
+    width: 430px;
     margin: auto;
   }
   .carousel-inner {
@@ -190,9 +192,11 @@ hr {
   #btn_order_area {
     max-width: 430px;
     margin: auto;
+    width: 100%;
   }
   #btn_payOptions_area {
     max-width: 430px;
     margin: auto;
+    width: 100%;
   }
 }
