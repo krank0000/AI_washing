@@ -145,6 +145,10 @@ hr {
     max-width: 430px;
     margin: auto;
   }
+  /**背景動畫**/
+  .bg_water {
+    display: none;
+  }
   /* 分頁跑版 */
   #page_title_area {
     position: static;
