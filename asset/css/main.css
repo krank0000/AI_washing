@@ -160,12 +160,12 @@ hr {
   #area {
     max-width: 430px;
     position: relative;
-    top: 100px;
+    padding-top: 10px;
   }
   #purchase_area {
     max-width: 430px;
     position: relative;
-    top: 100px;
+    padding-top: 10px;
   }
   #carousel_button_RL {
     position: static;
@@ -178,7 +178,7 @@ hr {
   #record_area {
     max-width: 430px;
     position: relative;
-    top: 100px;
+    padding-top: 10px;
   }
   #price_area {
     max-width: 430px;
@@ -191,16 +191,19 @@ hr {
   #btn_purchase_area {
     max-width: 430px;
     margin: auto;
+    padding: 0 10%;
     width: 100%;
   }
   #btn_order_area {
     max-width: 430px;
     margin: auto;
+    padding: 0 10%;
     width: 100%;
   }
   #btn_payOptions_area {
     max-width: 430px;
     margin: auto;
     width: 100%;
+    padding: 0 10%;
   }
 }
