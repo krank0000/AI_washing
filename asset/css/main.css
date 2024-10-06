@@ -191,19 +191,19 @@ hr {
   #btn_purchase_area {
     max-width: 430px;
     margin: auto;
-    padding: 0 10%;
+    padding: 0 40px;
     width: 100%;
   }
   #btn_order_area {
     max-width: 430px;
     margin: auto;
-    padding: 0 10%;
+    padding: 0 40px;
     width: 100%;
   }
   #btn_payOptions_area {
     max-width: 430px;
     margin: auto;
     width: 100%;
-    padding: 0 10%;
+    padding: 0 40px;
   }
 }
