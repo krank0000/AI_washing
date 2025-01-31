@@ -167,6 +167,11 @@ hr {
     position: relative;
     padding-top: 10px;
   }
+  #step_area {
+    max-width: 430px;
+    position: relative;
+    padding-top: 10px;
+  }
   #carousel_button_RL {
     position: static;
     width: 430px;
